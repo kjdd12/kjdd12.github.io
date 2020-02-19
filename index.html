@@ -6,9 +6,20 @@
   <title>Автосервис</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-   <script src="js/js.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/js.js"></script>
   </head>
 <body>
+  <script type="text/javascript">
+    $(function(){
+        $("a[href^='#']").click(function(){
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+        });
+    });
+</script>
+
   <header class="hero">
   <div class="container">
     <div class="hero-header">
@@ -138,7 +149,7 @@
     <div type="button" class="callback-bt">
       <div class="text-call">
           <i class="fa fa-phone"></i>
-          <span>Заказать<br>звонок</span>
+          <a class="button-text-call" href="#Zvonok">Заказать<br>звонок</a>
       </div>
   </div>
 
@@ -171,13 +182,13 @@
 </div>  
 
 <form class="decor">
-  <div class="form-left-decoration"></div>
+  <div  class="form-left-decoration"></div>
   <div class="form-right-decoration"></div>
   <div class="circle"></div>
-  <div class="form-inner">
-        <h3>Написать нам</h3>
+  <div id="Zvonok" class="form-inner">
+        <h3 >Написать нам</h3>
     <input type="text" placeholder="Имя">
-    <input type="email" placeholder="Email">
+    <input type="Телефон" placeholder="Телефон">
     <textarea placeholder="Сообщение..." rows="3"></textarea>
     <input type="submit" value="Отправить">
   </div>
@@ -190,7 +201,7 @@
     </div>
     <div class="contacts-mail">
       <h4 class="contacts-title">Почта</h4>
-      <a href="remfranc@mail.ru" class="contacts-link">remfranc@mail.ru</a>
+      <a href="remfrance@mail.ru" class="contacts-link">remfrance@mail.ru</a>
     </div>
     </div>
   </div>
