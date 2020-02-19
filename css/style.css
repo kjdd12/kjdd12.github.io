@@ -25,9 +25,10 @@ body{
 /*анимация услуг*/
 .perv{
 animation-name: move;
-animation-duration: 4s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;}
+animation-duration: 3s;
+animation-timing-function: ease-outs;
+animation-iteration-count: 1;
+}
 
 @keyframes move{
     0%{
@@ -195,8 +196,8 @@ img:nth-child(6){animation-delay:4s}
 }
 .form-inner input[type="submit"] {
   margin-top: 30px;
-  background: #f69a73;
-  border-bottom: 4px solid #d87d56;
+  background: #38a3fd;
+  border-bottom: 4px solid #38a3fd;
   color: white;
   font-size: 14px;
 }
@@ -228,7 +229,15 @@ img:nth-child(6){animation-delay:4s}
     -webkit-animation:hoverWave linear 1s infinite;
     animation:hoverWave linear 1s infinite;
 }
-
+.button-text-call{
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-call{
+    display:flex ;
+    align-items: center ;
+    justify-content: center;
+}
 .callback-bt .text-call{
     height:68px;
     width:68px;        
