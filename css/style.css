@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 .img{
     max-width: 100%;
 }
@@ -8,15 +6,50 @@ body{
     background-color: #20202D;
     color: white;
     font-family: 'Roboto', sans-serif;
-    width: 90%;
-    max-width: 945px;
-    margin: 50px auto;
+    
 
 }
-.container{
-    width: 90%;
-    max-width: 945px;
-    margin: 50px auto;
+
+.qwe{
+    box-shadow: 0px 5px 10px 0px #000;
+    padding: 4% 20%;
+    margin: 0px auto;
+   
+}
+.qwe1{
+    box-shadow: 0px 5px 10px 0px #000;
+   
+ padding: 1% 20%;
+    margin: 0px auto;
+   
+}
+.qwe2{
+    box-shadow: 0px 5px 10px 0px #000;
+  line-height: 1.4em;
+ padding: 1% 20%;
+    margin: 0px auto;
+   
+}
+.qwe3{
+    box-shadow: 0px 5px 10px 0px #000;
+  line-height: 1.4em;
+ padding: 1% 20%;
+    margin: 0px auto;
+   
+}
+.qwe4{
+    box-shadow: 0px 5px 10px 0px #000;
+  line-height: 1.4em;
+ padding: 1% 20%;
+    margin: 0px auto;
+   
+}
+.text{
+    margin: 35px 0px;
+    
+}
+.image{
+    padding-right: 5px;
 }
 .section{
     padding-top: 64px;
@@ -24,6 +57,8 @@ body{
 
 /*анимация услуг*/
 .perv{
+    line-height: 1em;
+    padding: 5px 0px;
 animation-name: move;
 animation-duration: 3s;
 animation-timing-function: ease-outs;
